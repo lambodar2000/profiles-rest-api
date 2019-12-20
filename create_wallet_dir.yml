@@ -1,6 +1,6 @@
 ---
 - name: Create KMS directories
-  host: node1
+  host: all
   tasks:
   - name: Create soft wallet Directoy
     file:
