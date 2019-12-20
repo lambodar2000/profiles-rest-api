@@ -1,0 +1,15 @@
+---
+- name: Create KMS directories
+  host: node1
+  tasks:
+  - name: Create soft wallet Directoy
+    file:
+      path: /var/opt/oracle/tde_wallets/FNTR3DEV/soft
+      state: directory
+      mode: '0755'
+
+  - name: Create hsm wallet Directoy
+    file:
+      path: /var/opt/oracle/tde_wallets/FNTR3DEV/hsm
+      state: directory
+      mode: '0755'
